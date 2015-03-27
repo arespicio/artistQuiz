@@ -41,20 +41,89 @@ header{
 	width: 300px;
 }
 
+
+/****PALETTE STYLES****/
 .palette{
 	position: relative;
-	height: 200px;
-	float: right;
+    height: 200px;
+    width: 180px;
+    float: right;
+}
+
+.palette #circle1,
+.palette #circle2,
+.palette #circle3,
+.palette #circle4,
+.palette #circle5,
+.palette #circle6,
+.palette #circle7,
+.palette #circle8,
+.palette #circle9,
+.palette #circle10{
+	position: absolute;
 }
 
 .palette #circle1{
-  	position: absolute;
-  	float: right;
+    float: right;
+  	margin-left: 55%;
+  	margin-top: -90%;
+  	background-color: #c3688c;
 }
-/*
-.palette img{
-	
-}*/
+
+.palette #circle2{
+	background-color: #68bac3;
+	margin-top: -88%;
+  	margin-left: 42%;
+}
+
+.palette #circle3{
+	background-color: #c37268;
+	margin-top: -82%;
+  	margin-left: 30%;
+}
+
+.palette #circle4{
+	background-color: #c39f68;
+	margin-top: -72%;
+  	margin-left: 19%;
+}
+
+.palette #circle5{
+	background-color: #9f68c3;
+	margin-top: -60%;
+  	margin-left: 13%;
+}
+
+.palette #circle6{
+	background-color: #bac368;
+	margin-top: -47%;
+  	margin-left: 10%;
+}
+
+.palette #circle7{
+	background-color: #688cc3;
+	margin-top: -34%;
+    margin-left: 13%;
+}
+
+.palette #circle8{
+	background-color: #c3688c;
+	margin-top: -26%;
+    margin-left: 23%;
+}
+
+.palette #circle9{
+	background-color: #8ca7d2;
+	margin-top: -24%;
+    margin-left: 37%;
+}
+
+.palette #circle10{
+	background-color: #90773E;
+    margin-top: -26%;
+    margin-left: 51%;
+}
+
 
 .paint{
 	height: 20px;
