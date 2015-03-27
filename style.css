@@ -1,0 +1,65 @@
+
+/****GLOBAL STYLES****/
+
+section{
+    max-width: 1200px;
+    margin: 5% 15%;
+}
+
+body{
+	background-color: #68c39f;
+	color: #fff;
+	font-family: 'Signika', sans-serif;
+}
+
+h1{
+	font-size: 5em;
+}
+
+
+/****LAYOUT STYLES****/
+header{
+    text-align: center;
+}
+
+.frame{
+	background-color: #fff;
+	border: 20px solid #564b40;
+  	border-radius: 20px;
+  	float: left;
+	height: 450px;
+  	width: 350px;
+}
+
+.options{
+	background-color: #fff;
+	border-radius: 20px;
+	float: left;
+	height: 400px;
+	margin-left: 10%;
+  	margin-top: 5%;
+	width: 300px;
+}
+
+.palette{
+	position: relative;
+	height: 200px;
+	float: right;
+}
+
+.palette #circle1{
+  	position: absolute;
+  	float: right;
+}
+/*
+.palette img{
+	
+}*/
+
+.paint{
+	height: 20px;
+	width: 20px;
+	border-radius: 50px;
+	background-color: #fff;
+	float: right;
+}
