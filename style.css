@@ -3,7 +3,7 @@
 
 section{
     max-width: 1200px;
-    margin: 5% 15%;
+    margin-left: 20%;
 }
 
 .clearfix:after { 
@@ -85,7 +85,7 @@ button#start{
 	float: left;
 	height: 400px;
 	margin-left: 10%;
-  	margin-top: 5%;
+  	margin-top: 3%;
 	width: 300px;
 }
 
@@ -104,7 +104,7 @@ button#start{
 	font-size: 1.5em;
 	list-style: none;	
 	padding: 2%;
-	display: none;
+	/*display: none;*/
 }
 
 #artist li:hover{
@@ -115,9 +115,9 @@ button#start{
 /****PALETTE STYLES****/
 .palette{
 	position: relative;
-    height: 200px;
-    width: 180px;
-    margin-left: 65%;
+    height: 150px;
+    width: 120px;
+    margin-left: 60%;
 }
 
 .palette #circle1,
@@ -131,83 +131,90 @@ button#start{
 .palette #circle9,
 .palette #circle10{
 	position: absolute;
+	background-color: #fff;
 }
 
-.palette #circle1{
+.palette h3{
+	color: #68c39f;
+  	font-size: 1.8em;
+  	margin-left: -80%;
+  	margin-top: 56%;
+ 	 position: absolute;
+}
+
+.palette h2{
+	font-size: 2.3em;
+	margin-left: 34%;
+  	margin-top: -70%;
+	position: absolute;
+}
+
+
+.palette #circle1{ 
     float: right;
   	margin-left: 55%;
   	margin-top: -90%;
-  	background-color: #c3688c;
-  	display:none;
+  	/*background-color: #c3688c; when correct*/
 }
 
 .palette #circle2{
-	background-color: #68bac3;
+	/*background-color: #68bac3; when correct*/
 	margin-top: -88%;
   	margin-left: 42%;
-  	display: none;
 }
 
 .palette #circle3{
-	background-color: #c37268;
+	/*background-color: #c37268; when correct*/
 	margin-top: -82%;
   	margin-left: 30%;
-  	display:none;
 }
 
 .palette #circle4{
-	background-color: #c39f68;
+	/*background-color: #c39f68; when correct*/
 	margin-top: -72%;
   	margin-left: 19%;
-  	display:none;
 }
 
 .palette #circle5{
-	background-color: #9f68c3;
+	/*background-color: #9f68c3; when correct*/
 	margin-top: -60%;
   	margin-left: 13%;
-  	display:none;
 }
 
 .palette #circle6{
-	background-color: #bac368;
+	/*background-color: #bac368; when correct*/
 	margin-top: -47%;
   	margin-left: 10%;
-  	display:none;
 }
 
 .palette #circle7{
-	background-color: #688cc3;
-	margin-top: -34%;
-    margin-left: 13%;
-    display:none;
+	/*background-color: #688cc3; when correct*/
+	margin-top: -35%;
+    margin-left: 15%;
 }
 
 .palette #circle8{
-	background-color: #c3688c;
-	margin-top: -26%;
-    margin-left: 23%;
-    display:none;
+	/*background-color: #c3688c; when correct*/
+	margin-top: -28%;
+  	margin-left: 25%;
 }
 
 .palette #circle9{
-	background-color: #8ca7d2;
-	margin-top: -24%;
-    margin-left: 37%;
-    display:none;
+	/*background-color: #8ca7d2; when correct*/
+	margin-top: -25%;
+    margin-left: 38%;
 }
 
 .palette #circle10{
-	background-color: #90773E;
+	/*background-color: #90773E; when correct*/
     margin-top: -26%;
     margin-left: 51%;
-    display: none;
 }
 
 
 .paint{
-	height: 20px;
-	width: 20px;
+	height: 13px;
+	width: 13px;
 	border-radius: 50px;
 	background-color: #fff;
 	float: right;
