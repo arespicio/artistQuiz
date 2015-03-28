@@ -10,6 +10,7 @@ body{
 	background-color: #68c39f;
 	color: #fff;
 	font-family: 'Signika', sans-serif;
+	 overflow: auto;
 }
 
 h1{
