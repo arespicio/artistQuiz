@@ -17,6 +17,8 @@ h1{
 }
 
 
+
+
 /****LAYOUT STYLES****/
 header{
     text-align: center;
@@ -27,8 +29,47 @@ header{
 	border: 20px solid #564b40;
   	border-radius: 20px;
   	float: left;
-	height: 450px;
+	height: 400px;
   	width: 350px;
+  	overflow: hidden;
+}
+
+#intro{
+	/*display: none;*/
+}
+
+#picture img{
+	width: 100%;
+	position: relative;
+	display: none;
+}
+
+.frame p{
+	color: #68c39f;
+	margin-bottom: 0;
+  	margin-top: 10%;
+  	margin-left: 20%;
+  	margin-right: 20%;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+.frame #end{
+	display: none;
+}
+
+.frame #end p{
+	margin-top: 20%;
+}
+
+button#start{
+	background-color: #fff;
+	border: none;
+	cursor:pointer;
+	padding-left: 32%;
+	/*padding-top: 10%;*/
+	/*display: none;*/
 }
 
 .options{
@@ -39,6 +80,28 @@ header{
 	margin-left: 10%;
   	margin-top: 5%;
 	width: 300px;
+}
+
+.options p{
+	color: #68c39f;
+	margin: 15% 10%;
+	text-align: center;
+}
+
+
+/****QUIZ STYLES****/
+#artist li{
+	color: #68c39f;
+	cursor: pointer;
+	font-family: 'Signika', sans-serif;
+	font-size: 1.5em;
+	list-style: none;	
+	padding: 2%;
+	display: none;
+}
+
+#artist li:hover{
+	color: #564b40;
 }
 
 
@@ -68,60 +131,70 @@ header{
   	margin-left: 55%;
   	margin-top: -90%;
   	background-color: #c3688c;
+  	display:none;
 }
 
 .palette #circle2{
 	background-color: #68bac3;
 	margin-top: -88%;
   	margin-left: 42%;
+  	display: none;
 }
 
 .palette #circle3{
 	background-color: #c37268;
 	margin-top: -82%;
   	margin-left: 30%;
+  	display:none;
 }
 
 .palette #circle4{
 	background-color: #c39f68;
 	margin-top: -72%;
   	margin-left: 19%;
+  	display:none;
 }
 
 .palette #circle5{
 	background-color: #9f68c3;
 	margin-top: -60%;
   	margin-left: 13%;
+  	display:none;
 }
 
 .palette #circle6{
 	background-color: #bac368;
 	margin-top: -47%;
   	margin-left: 10%;
+  	display:none;
 }
 
 .palette #circle7{
 	background-color: #688cc3;
 	margin-top: -34%;
     margin-left: 13%;
+    display:none;
 }
 
 .palette #circle8{
 	background-color: #c3688c;
 	margin-top: -26%;
     margin-left: 23%;
+    display:none;
 }
 
 .palette #circle9{
 	background-color: #8ca7d2;
 	margin-top: -24%;
     margin-left: 37%;
+    display:none;
 }
 
 .palette #circle10{
 	background-color: #90773E;
     margin-top: -26%;
     margin-left: 51%;
+    display: none;
 }
 
 

@@ -11,8 +11,27 @@
 		<h1>Artist Quiz</h1>
 	</header>
 	<section>
-		<div class="frame" id="picture"></div>
-		<div class="options"></div>
+		<div class="frame">
+			<div id="picture">
+				<img src="images/Monet.jpg">
+			</div>
+			<div id="intro">
+				<p>Can you identify famous painters with their work? <br /><br />Match the correct artist from the list to the rightt with the painting displayed.</p>
+				<button id="start" type="button"><img src="images/start.jpg"></button>
+			</div>
+			<div id="end">
+				<p>Congratulations!<br /><br />Your Score:<br /><br /><span>7 out of 10</span></span></p>
+				<button id="start" type="button"><img src="images/play.jpg"></button>
+			</div>
+		</div>
+		<div class="options">
+			<p>Select the Artist that painted the painting displayed to the left.</p>
+			<ul id="artist">
+				<li>Paul Cezanne</li>
+				<li>Edouard Manet</li>
+				<li>Claude Monet</li>
+			</ul>
+		</div>
 		<div class="palette">
 			<img src="images/blank-palette.svg">
 			<div class="paint" id="circle1"></div>
