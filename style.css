@@ -4,7 +4,13 @@
 section{
     max-width: 1200px;
     margin: 5% 15%;
-    overflow: auto;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 
 body{
@@ -111,7 +117,7 @@ button#start{
 	position: relative;
     height: 200px;
     width: 180px;
-    float: right;
+    margin-left: 65%;
 }
 
 .palette #circle1,
