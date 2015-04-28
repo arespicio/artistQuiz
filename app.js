@@ -47,7 +47,7 @@ $(document).ready(function(){
 		$('.next').show();
 	});
 
-	$('#next').click(function(){
+	$('.next').click(function(){
 		nextQuestion();
 	});
 	
@@ -144,6 +144,8 @@ function nextQuestion(){
 	$('.intro').hide();
 	$('#picture').show();
 	$('.artist').show();
+	$('.next').hide();
+	$('.message').empty();
 }
 
 
