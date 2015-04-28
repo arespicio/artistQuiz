@@ -125,11 +125,13 @@ function userGuess(liThatWasClicked){
 	if(isCorrect) {
 		$('.artist').hide();
 		$('.message').html('<strong>Correct.</strong>');
+		$('.next').show();
 		$('#circle' + currentQuestionIndex).css('background-color', '#c3688c');
 	}
 	else{
 		$('.artist').hide();
 		$('.message').html('<strong>Incorrect.</strong>');
+		$('.next').show();
 	}
 
 	// dumpQuestion(currentQuestionIndex);
@@ -138,6 +140,10 @@ function userGuess(liThatWasClicked){
 //Moves user on to next question when button is clicked
 function nextQuestion(){
 	currentQuestionIndex++;
+	loadQuestionData();
+	$('.intro').hide();
+	$('#picture').show();
+	$('.artist').show();
 }
 
 
