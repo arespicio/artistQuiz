@@ -1,5 +1,5 @@
 
-/****GLOBAL STYLES****/
+/*************GLOBAL STYLES*************/
 
 section{
     max-width: 1200px;
@@ -26,7 +26,7 @@ h1{
 
 
 
-/****LAYOUT STYLES****/
+/************LAYOUT STYLES*************/
 header{
     text-align: center;
 }
@@ -48,7 +48,6 @@ header{
 #picture img{
 	width: 100%;
 	position: relative;
-	display: none;
 }
 
 .frame p{
@@ -76,7 +75,6 @@ button#start{
 	cursor:pointer;
 	padding-left: 32%;
 	/*padding-top: 10%;*/
-	/*display: none;*/
 }
 
 .options{
@@ -96,24 +94,31 @@ button#start{
 }
 
 
-/****QUIZ STYLES****/
-#artist li{
+/************QUIZ STYLES**************/
+.artist li{
 	color: #68c39f;
 	cursor: pointer;
 	font-family: 'Signika', sans-serif;
 	font-size: 1.5em;
 	list-style: none;	
 	padding: 2%;
-	/*display: none;*/
 }
 
-#artist li:hover{
+.artist li:hover{
 	color: #564b40;
 }
 
+.message{
+	color: #68c39f;
+}
 
-/****PALETTE STYLES****/
+/*#next{
+	display: none;
+}*/
+
+/**********PALETTE STYLES************/
 .palette{
+	/*float: right;*/
 	position: relative;
     height: 150px;
     width: 120px;
@@ -139,7 +144,7 @@ button#start{
   	font-size: 1.8em;
   	margin-left: -80%;
   	margin-top: 56%;
- 	 position: absolute;
+ 	position: absolute;
 }
 
 .palette h2{
@@ -150,61 +155,61 @@ button#start{
 }
 
 
-.palette #circle1{ 
+.palette #circle0{ 
   	margin-left: 55%;
   	margin-top: -90%;
   	/*background-color: #c3688c; when correct*/
 }
 
-.palette #circle2{
+.palette #circle1{
 	/*background-color: #68bac3; when correct*/
 	margin-top: -88%;
   	margin-left: 42%;
 }
 
-.palette #circle3{
+.palette #circle2{
 	/*background-color: #c37268; when correct*/
 	margin-top: -82%;
   	margin-left: 30%;
 }
 
-.palette #circle4{
+.palette #circle3{
 	/*background-color: #c39f68; when correct*/
 	margin-top: -72%;
   	margin-left: 19%;
 }
 
-.palette #circle5{
+.palette #circle4{
 	/*background-color: #9f68c3; when correct*/
 	margin-top: -60%;
   	margin-left: 13%;
 }
 
-.palette #circle6{
+.palette #circle5{
 	/*background-color: #bac368; when correct*/
 	margin-top: -47%;
   	margin-left: 10%;
 }
 
-.palette #circle7{
+.palette #circle6{
 	/*background-color: #688cc3; when correct*/
 	margin-top: -35%;
     margin-left: 15%;
 }
 
-.palette #circle8{
+.palette #circle7{
 	/*background-color: #c3688c; when correct*/
 	margin-top: -28%;
   	margin-left: 25%;
 }
 
-.palette #circle9{
+.palette #circle8{
 	/*background-color: #8ca7d2; when correct*/
 	margin-top: -25%;
     margin-left: 38%;
 }
 
-.palette #circle10{
+.palette #circle9{
 	/*background-color: #90773E; when correct*/
     margin-top: -26%;
     margin-left: 51%;

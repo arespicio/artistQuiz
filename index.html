@@ -5,6 +5,8 @@
 	<title>Artist Quiz: A Thinkful Project</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
 	<header>
@@ -12,28 +14,34 @@
 	</header>
 	<section class="clearfix">
 		<div class="frame">
-			<div id="intro">
+			<div class="intro" id="intro">
 				<p>Can you identify famous painters with their work? <br /><br />Match the correct artist from the list to the right with the painting displayed.</p>
 				<button id="start" type="button"><img src="images/start.jpg"></button>
 			</div>
 			<div id="picture">
-				<img src="images/Monet.jpg">
+				<img id="questionImage" src="">
 			</div>
 			<div id="end">
-				<p>Congratulations!<br /><br />Your Score:<br /><br /><span>7 out of 10</span></span></p>
+				<p>Congratulations!<br /><br />Your Score:<br /><br /><span>7</span> out of 10</p>
 				<button id="start" type="button"><img src="images/play.jpg"></button>
 			</div>
 		</div>
 		<div class="options">
 			<p>Select the Artist that painted the painting displayed to the left.</p>
-			<ul id="artist">
-				<li>Paul Cezanne</li>
-				<li>Edouard Manet</li>
-				<li>Claude Monet</li>
+			<ul class="artist">
+				<li id="choice1"></li>
+				<li id="choice2"></li>
+				<li id="choice3"></li>
 			</ul>
+			<div class="message">
+				<button class="next" type="button">Next Question</button>
+			</div>
 			<div class="palette">
 				<h3>Score:</h3>
+				<!-- hold img and circles in div with id palette div...use img as background-image and make height and width = size of svg-->
+			
 				<img src="images/blank-palette.svg">
+					<div class="paint" id="circle0"></div> <!--use Top and Left properties to place exactly where they should go...either palette or circles postion: relative-->
 					<div class="paint" id="circle1"></div>
 					<div class="paint" id="circle2"></div>
 					<div class="paint" id="circle3"></div>
@@ -43,7 +51,6 @@
 					<div class="paint" id="circle7"></div>
 					<div class="paint" id="circle8"></div>
 					<div class="paint" id="circle9"></div>
-					<div class="paint" id="circle10"></div>
 				<h2>0</h2>
 			</div>
 		</div>
