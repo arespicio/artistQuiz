@@ -61,20 +61,34 @@ header{
     
 }
 
-.frame #end{
+/*.frame #end{
 	display: none;
-}
+}*/
 
 .frame #end p{
 	margin-top: 20%;
 }
 
-button#start{
+button#start,
+button#startAgain{
 	background-color: #fff;
 	border: none;
 	cursor:pointer;
 	padding-left: 32%;
 	/*padding-top: 10%;*/
+}
+
+button.next,
+button.score{
+	background-color: #68C39F;
+  padding: 7px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-family: 'Signika', sans-serif;
+  font-size: 1em;
+  margin-left: 30%;
+  margin-top: 5%;
 }
 
 .options{
@@ -110,6 +124,8 @@ button#start{
 
 .message{
 	color: #68c39f;
+	padding-left: 30%;
+  	font-size: 2em;
 }
 
 /*#next{
@@ -125,6 +141,7 @@ button#start{
     margin-left: 60%;
 }
 
+.palette #circle0,
 .palette #circle1,
 .palette #circle2,
 .palette #circle3,

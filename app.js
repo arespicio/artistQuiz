@@ -44,26 +44,40 @@ $(document).ready(function(){
 
 	$('li').click(function(){
 		userGuess(this); //variable this holds the li element that was clicked
-		$('.next').show();
+		// $('.next').show();
 	});
 
 	$('.next').click(function(){
 		nextQuestion();
+	});
+
+	$('.score').click(function(){
+		finalScore();
+	});
+
+	$('#startAgain').click(function(){
+		game();
 	});
 	
 });
 
 function begin (){
 	$('.intro').show();
+	$('#end').hide();
 	$('#picture').hide();
 	$('#artist').hide();
 	$('.next').hide();
+	$('.score').hide();
 }
 
 function game (){
 	currentQuestionIndex = 0;
 	loadQuestionData();
 	$('.intro').hide();
+	$('.message').html('');
+	$('#count').html('0');
+	$('.paint').css('background-color', '#ffffff');
+	$('.score').hide();
 	$('#picture').show();
 	$('.artist').show();
 }
@@ -122,18 +136,24 @@ function userGuess(liThatWasClicked){
 	var isCorrect = getCurrentQuestion().correct == getCurrentQuestion().userAnswer
 	console.log('Correct Answer? ' + isCorrect);
 
+	$('.artist').hide();
+
 	if(isCorrect) {
-		$('.artist').hide();
-		$('.message').html('<strong>Correct.</strong>');
-		$('.next').show();
+		$('.message').html('<strong>Correct!</strong>');
+		$('#count').html(function(i, val) { return val*1+1 });
 		$('#circle' + currentQuestionIndex).css('background-color', '#c3688c');
 	}
 	else{
-		$('.artist').hide();
-		$('.message').html('<strong>Incorrect.</strong>');
-		$('.next').show();
+		$('.message').html('<strong>Incorrect</strong>');
 	}
 
+	if(currentQuestionIndex < 9){
+		$('.next').show();
+	}
+	else{
+		$('.score').show();
+	}
+	
 	// dumpQuestion(currentQuestionIndex);
 }
 
@@ -147,6 +167,15 @@ function nextQuestion(){
 	$('.next').hide();
 	$('.message').empty();
 }
+
+function finalScore(){
+	var totalCorrect = $('#count').html();
+	$('#picture').hide();
+	$('#end').show();
+	$('#totalCorrect').html(totalCorrect);
+}
+
+
 
 
 

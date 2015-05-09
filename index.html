@@ -22,8 +22,8 @@
 				<img id="questionImage" src="">
 			</div>
 			<div id="end">
-				<p>Congratulations!<br /><br />Your Score:<br /><br /><span>7</span> out of 10</p>
-				<button id="start" type="button"><img src="images/play.jpg"></button>
+				<p>Congratulations!<br /><br />Your Score:<br /><br /><span id="totalCorrect"></span> out of 10</p>
+				<button id="startAgain" type="button"><img src="images/play.jpg"></button>
 			</div>
 		</div>
 		<div class="options">
@@ -35,6 +35,7 @@
 			</ul>
 			<div class="message"></div>
 			<button class="next" type="button">Next Question</button>
+			<button class="score" type="button">Final Score</button>
 			<div class="palette">
 				<h3>Score:</h3>
 				<!-- hold img and circles in div with id palette div...use img as background-image and make height and width = size of svg-->
@@ -50,7 +51,7 @@
 					<div class="paint" id="circle7"></div>
 					<div class="paint" id="circle8"></div>
 					<div class="paint" id="circle9"></div>
-				<h2>0</h2>
+				<h2 id="count">0</h2>
 			</div>
 		</div>
 		
